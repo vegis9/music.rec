@@ -1,0 +1,8 @@
+header {
+    color: #fff;
+    background: url("img/album-covers.jpg") 0 -20px repeat;
+}
+
+    header h1 {
+        padding: 30px 0;
+    }
