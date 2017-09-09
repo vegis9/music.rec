@@ -13,13 +13,13 @@
     
     <header>
         <div class="container">
-            <h1>Mano albumai</h1>
+            <h1 class="main-title">Mano albumai</h1>
         </div>
     </header>
 
     <section class="container">
 
-        <form class="mt-5">
+        <form class="mt-5 album-form">
             <div class="form-group row">
                 <label for="artist" class="col-sm-2 control-label">Atlikėjas</label>
                 <div class="col">
@@ -44,15 +44,23 @@
                     <input type="file" class="form-control" id="image">
                 </div>
             </div>
-            <button type="button" class="btn btn-primary">Pridėti</button>
+            <!-- <button type="button" class="btn btn-primary" onclick="addAlbum()">Pridėti</button> -->
+            <button type="button" class="btn btn-primary btn-save-album">Pridėti</button>
+            <button type="button" class="btn btn-primary btn-clear-form">Išvalyti</button>
         </form>
+
+        <hr>
+
+        <div class="album-list">
+            
+        </div>
 
     </section>
 
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="jsonData.js"></script>
     <script src="script.js"></script>
 </body>
 
